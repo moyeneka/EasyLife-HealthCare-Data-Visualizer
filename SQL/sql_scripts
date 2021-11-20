@@ -8,7 +8,7 @@ CREATE TABLE Patient(
 );
 
 CREATE TABLE Heart(
-    id int(6) REFERENCES Patient(id),
+    id int(6),
     cp int(1) NOT NULL,
     restingbp int(3) NOT NULL,
     chol int(3) NOT NULL,
@@ -22,10 +22,11 @@ CREATE TABLE Heart(
     thal int(1) NOT NULL,
     tgt int(1) NOT NULL,
     PRIMARY KEY (id)
+    FOREIGN KEY (id) REFERENCES Patient(id)
 );
 
 CREATE TABLE diabetes(
-    id int(6) REFERENCES Patient(id),
+    id int(6),
     pregnancies int(2) NOT NULL,
     glucose int(3) NOT NULL,
     bloodp int(3) NOT NULL,
@@ -35,6 +36,7 @@ CREATE TABLE diabetes(
     dpf decimal(3,3) NOT NULL,
     outcome int(1) NOT NULL,
     PRIMARY KEY (id)
+    FOREIGN KEY (id) REFERENCES Patient(id)
 );
 
 INSERT INTO Patient VALUES ('Vincent', 'Stewart', 'm', 63, 000001);
