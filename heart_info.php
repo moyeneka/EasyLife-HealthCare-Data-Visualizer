@@ -26,7 +26,7 @@
                             <h2>Patient Info</h2>
                         </div>
                         <div class="card-body">
-                            <form action="AddPatient.php" method="post">
+                            <form>
             
                                 <div class="mb-3 row">
                                     <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
@@ -41,17 +41,17 @@
                                 <div class="mb-3 row">
                                     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
                                     <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="Last Name" required>
+                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                                     </div>
                                 </div>
             
                                 <div class="mb-3 row">
                                     <label for="sex" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-                                    <input type="number" class="form-control" id="staticEmail" placeholder="Age">
+                                    <input type="number" class="form-control" id="Age" placeholder="Age">
                                     </div>
 
-                                    <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
+                                    <label for="lastName" class="col-sm-2 col-form-label">Sex</label>
                                     <div class="col-sm-2">
                                         <select class="form-select" aria-label="Default select example" >
                                             <option selected>Sex</option>
@@ -60,12 +60,17 @@
                                             <option value="3">Prefer Not To Say</option>
                                         </select>
                                     </div>
-                                </div>                    
+                                </div>
                                 
-                                <div class="row justify-content-end" >
-                                    <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary mb-3 float-right">Submit</button>
+                                <div class="mb-3 row">
+                                    <label for="Id" class="col-sm-2 col-form-label">ID</label>
+                                    <div class="col-sm-5">
+                                    <input type="text" class="form-control" id="id" placeholder="id" required>
                                     </div>
+                                </div>
+                                
+                                <div class="col-auto">
+                                <button type="submit" class="btn btn-primary mb-3">Submit</button>
                                 </div>
                             </form>
                         </div>
