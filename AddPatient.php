@@ -31,7 +31,7 @@
                                 <div class="mb-3 row">
                                     <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
                                     <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="First Name" required>
+                                    <input type="text" class="form-control" id="fname" placeholder="First Name" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
                                         </div>
@@ -41,19 +41,19 @@
                                 <div class="mb-3 row">
                                     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
                                     <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="Last Name" required>
+                                    <input type="text" class="form-control" id="lname" placeholder="Last Name" required>
                                     </div>
                                 </div>
             
                                 <div class="mb-3 row">
-                                    <label for="sex" class="col-sm-2 col-form-label">Age</label>
+                                    <label for="age" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-                                    <input type="number" class="form-control" id="staticEmail" placeholder="Age">
+                                    <input type="number" class="form-control" id="age" placeholder="Age">
                                     </div>
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
                                     <div class="col-sm-2">
-                                        <select class="form-select" aria-label="Default select example" >
+                                        <select class="form-select" id="sex" aria-label="Default select example" >
                                             <option selected>Sex</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
@@ -92,3 +92,17 @@
   </body>
 </html>
 
+<?php
+if(isset($_POST['submit']))
+{
+    $FNAME = escapeshellarg($_POST[fname]);
+    $LNAME = escapeshellarg($_POST[lname]);
+    $AGE = escapeshellarg($_POST[age]);
+    $SEX = escapeshellarg($_POST[sex])
+
+    $command = 'python3 add_patient.py' . ' ' .$FNAME . ' ' . $LNAME . ' ' . $SEX . ' ' . $AGE;
+
+    $escaped_command = escapeshellcmd($command);
+    system($escaped_command);
+}
+?>

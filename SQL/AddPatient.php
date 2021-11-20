@@ -51,4 +51,5 @@ if (isset($_POST['submit']))
     $FNAME = escapeshellarg($_POST[fname]);
     $LNAME = escapeshellarg($_POST[lname]);
     $SEX = escapeshellarg($_POST[sex])
+    $
 } -->
