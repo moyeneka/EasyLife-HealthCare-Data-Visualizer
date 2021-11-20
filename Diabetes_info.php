@@ -87,7 +87,7 @@
                                 
                                 <div class="row justify-content-end" >
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary mb-3 float-right">Submit</button>
+                                        <input name="submit" type="submit" class="btn btn-primary mb-3 float-right">
                                     </div>
                                 </div>
                             </form>
@@ -116,6 +116,21 @@
 </html>
 
 <?php
+if (isset($_POST['submit']))
+{
+    $PREGNANCIES = escapeshellarg($_POST[pregnancies]);
+    $GLUCOSE = escapeshellarg($_POST[glucose]);
+    $BLOODP = escapeshellarg($_POST[bloodp]);
+    $SKINTH = escapeshellarg($_POST[skint]);
+    $INSULIN = escapeshellarg($_POST[insulin]);
+    $BMI = escapeshellarg($_POST[bmi]);
+    $DPF = escapeshellarg($_POST[dpf]);
+    $OUTCOME = escapeshellarg($_POST[outcome]);
 
+    $command = 'python3 add_patient.py' . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
+
+    $escaped_command = escapeshellcmd($command);
+    system($escaped_command);
+}
 ?>
 
