@@ -72,14 +72,14 @@
                                 <div class="mb-3 row">
                                     <label for="bmi" class="col-sm-3 col-form-label">BMI</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="bmi" name="bmi" placeholder="BMI" required>
+                                    <input type="number" step="0.01" class="form-control" id="bmi" name="bmi" placeholder="BMI" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="dpf" class="col-sm-3 col-form-label">DPF</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="dpf" name="dpf" placeholder="DPF" required>
+                                    <input type="number" step="0.01" class="form-control" id="dpf" name="dpf" placeholder="DPF" required>
                                     </div>
                                 </div>
 
@@ -133,7 +133,7 @@ if (isset($_POST['submit']))
     $DPF = escapeshellarg($_POST[dpf]);
     $OUTCOME = escapeshellarg($_POST[outcome]);
 
-    $command = 'python3 add_patient.py' . ' ' . $ID . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
+    $command = 'python3 add_heart.py' . ' ' . $ID . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
 
     $escaped_command = escapeshellcmd($command);
     system($escaped_command);

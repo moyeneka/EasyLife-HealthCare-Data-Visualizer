@@ -27,95 +27,100 @@
                         </div>
                         <div class="card-body">
                             <form action="AddHeartInfo.php" method="post">
-            
+                                <div class="mb-3 row">
+                                    <label for="id" class="col-sm-3 col-form-label">ID</label>
+                                    <div class="col-sm-4">
+                                    <input type="number" class="form-control" id="id" name="id" placeholder="ID" required>
+                                    </div>
+                                </div>
             
                                 <div class="mb-3 row">
                                     <label for="cp" class="col-sm-5 col-form-label">chest pain type (4 values)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="cp" placeholder="Chest Pain" required>
+                                    <input type="number" class="form-control" id="cp" name="cp" placeholder="Chest Pain" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="restingbp" class="col-sm-5 col-form-label">Resting Blood pressure</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="restingbp" placeholder="Resting Blood pressure" required>
+                                    <input type="number" class="form-control" id="restingbp" name="restingbp" placeholder="Resting Blood pressure" required>
                                     </div>
                                     </div>
                                     
                                 <div class="mb-3 row">
                                     <label for="chol" class="col-sm-5 col-form-label">Serum Cholestoral (mg/dl)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="chol " placeholder="Serum Cholestoral" required>
+                                    <input type="number" class="form-control" id="chol" name="chol" placeholder="Serum Cholestoral" required>
                                     </div>
                                     </div>
 
                                 <div class="mb-3 row">
                                     <label for="fbs" class="col-sm-5 col-form-label">Fasting Blood Sugar > 120 mg/dl</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="fbs" placeholder="Fasting Blood Sugar" required>
+                                    <input type="number" class="form-control" id="fbs" name="fbs" placeholder="Fasting Blood Sugar" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="restecg" class="col-sm-5 col-form-label"> Resting Electrocardiographic Results (values 0,1,2)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="restecg" placeholder="Resting Electrocardiographic Results" required>
+                                    <input type="number" class="form-control" id="restecg" name="restecg" placeholder="Resting Electrocardiographic Results" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="thalach" class="col-sm-5 col-form-label">Maximum Heart Rate Achieved</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="thalach" placeholder="Maximum Heart Rate Achieved" required>
+                                    <input type="number" class="form-control" id="thalach" name="thalach" placeholder="Maximum Heart Rate Achieved" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="exang" class="col-sm-5 col-form-label">Exercise Induced Angina</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="exang" placeholder="Exercise Induced Angina" required>
+                                    <input type="number" class="form-control" id="exang" name="exang" placeholder="Exercise Induced Angina" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="oldpeak" class="col-sm-5 col-form-label">Oldpeak</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="oldpeak" placeholder="Oldpeak" required>
+                                    <input type="number" class="form-control" id="oldpeak" name="oldpeak" placeholder="Oldpeak" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="slope" class="col-sm-5 col-form-label">Slope of the peak exercise ST segment</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="slope" placeholder="Slope of the peak exercise ST segment" required>
+                                    <input type="number" class="form-control" id="slope" name="slope" placeholder="Slope of the peak exercise ST segment" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="ca" class="col-sm-5 col-form-label">Number of Major Vessels (0-3) colored by flourosopy</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="ca" placeholder="Resting Blood pressure" required>
+                                    <input type="number" class="form-control" id="ca" name="ca" placeholder="Resting Blood pressure" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="thal" class="col-sm-5 col-form-label">Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="thal" placeholder="Thal" required>
+                                    <input type="number" class="form-control" id="thal" name="thal" placeholder="Thal" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="tgt" class="col-sm-5 col-form-label">Target: 0= less chance of heart attack 1= more chance of heart attack</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="tgt" placeholder="Target" required>
+                                    <input type="number" class="form-control" id="tgt" name="tgt" placeholder="Target" required>
                                     </div>
                                 </div>                    
                                 
                                 <div class="row justify-content-end" >
                                     <div class="col-auto">
-                                        <button type="submit" class="btn btn-primary mb-3 float-right">Submit</button>
+                                        <button type="submit" name="submit" class="btn btn-primary mb-3 float-right">Submit</button>
                                     </div>
                                 </div>
                             </form>
@@ -142,4 +147,28 @@
     -->
   </body>
 </html>
+
+<?php
+if (isset($_POST['submit']))
+{
+    $ID = escapeshellarg($_POST[id]);
+    $CP = escapeshellarg($_POST[cp]);
+    $RESTINGBP = escapeshellarg($_POST[restingbp]);
+    $CHOL = escapeshellarg($_POST[chol]);
+    $FBS = escapeshellarg($_POST[fbs]);
+    $RESTECG = escapeshellarg($_POST[restecg]);
+    $THALACH = escapeshellarg($_POST[thalach]);
+    $EXANG = escapeshellarg($_POST[exang]);
+    $OLDPEAK = escapeshellarg($_POST[oldpeak]);
+    $SLOPE = escapeshellarg($_POST[slope]);
+    $CA = escapeshellarg($_POST[ca]);
+    $THAL = escapeshellarg($_POST[thal]);
+    $TGT = escapeshellarg($_POST[tgt]);
+
+    $command = 'python3 add_heart.py' . ' ' . $ID . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
+
+    $escaped_command = escapeshellcmd($command);
+    system($escaped_command);
+}
+?>
 

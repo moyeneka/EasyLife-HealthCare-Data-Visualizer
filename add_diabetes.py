@@ -20,7 +20,7 @@ try:
     OUTCOME = sys.argv[9]
 
     val = str(ID) + "," + str(PREGNANCIES) + "," + str(GLUCOSE) + "," + str(BLOODP) + "," + str(SKINTH) + "," + str(INSULIN) + "," + str(BMI) + "," + str(DPF) + "," + str(OUTCOME)
-    python_db.insert("Patient", val)
+    python_db.insert("diabetes", val)
 
     python_db.close()
 except Exception as e:
