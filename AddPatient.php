@@ -48,20 +48,12 @@
                                 <div class="mb-3 row">
                                     <label for="age" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-<<<<<<< Updated upstream
-                                    <input type="number" class="form-control" id="age" placeholder="Age" required>
-=======
-                                    <input type="number" class="form-control" id="age" name="age" placeholder="Age">
->>>>>>> Stashed changes
+                                    <input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
                                     </div>
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
                                     <div class="col-sm-2">
-<<<<<<< Updated upstream
-                                        <select class="form-select" id="sex" aria-label="Default select example">
-=======
-                                        <select class="form-select" id="sex" name="sex" aria-label="Default select example" >
->>>>>>> Stashed changes
+                                        <select class="form-select" id="sex" name="sex" aria-label="Default select example">
                                             <option selected>Sex</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>

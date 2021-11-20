@@ -32,56 +32,56 @@
                                 <div class="mb-3 row">
                                     <label for="pregnancies" class="col-sm-3 col-form-label">Pregnancies</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="pregnancies" placeholder="Pregnancies" required>
+                                    <input type="number" class="form-control" id="pregnancies" name="pregnancies" placeholder="Pregnancies" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="glucose" class="col-sm-3 col-form-label">Glucose</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="glucose" placeholder="Glucose" required>
+                                    <input type="number" class="form-control" id="glucose" name="glucose" placeholder="Glucose" required>
                                     </div>
                                     </div>
                                     
                                 <div class="mb-3 row">
                                     <label for="bloodp" class="col-sm-3 col-form-label">Blood Pressure</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="bloodp " placeholder="Serum Cholestoral" required>
+                                    <input type="number" class="form-control" id="bloodp " name="bloodp" placeholder="Serum Cholestoral" required>
                                     </div>
                                     </div>
 
                                 <div class="mb-3 row">
                                     <label for="skint" class="col-sm-3 col-form-label">Skint</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="skint" placeholder="Skint" required>
+                                    <input type="number" class="form-control" id="skint" name="skint" placeholder="Skint" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="insulin" class="col-sm-3 col-form-label">Insulin </label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="insulin" placeholder="Insulin" required>
+                                    <input type="number" class="form-control" id="insulin" name="insulin" placeholder="Insulin" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="bmi" class="col-sm-3 col-form-label">BMI</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="bmi" placeholder="BMI" required>
+                                    <input type="number" class="form-control" id="bmi" name="bmi" placeholder="BMI" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="dpf" class="col-sm-3 col-form-label">DPF</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="dpf" placeholder="DPF" required>
+                                    <input type="number" class="form-control" id="dpf" name="dpf" placeholder="DPF" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="outcome" class="col-sm-3 col-form-label">Outcome</label>
                                     <div class="col-sm-4">
-                                    <input type="number" class="form-control" id="outcome" placeholder="Outcome" required>
+                                    <input type="number" class="form-control" id="outcome" name="outcome" placeholder="Outcome" required>
                                     </div>
                                 </div>     
                                 
@@ -114,4 +114,8 @@
     -->
   </body>
 </html>
+
+<?php
+
+?>
 
