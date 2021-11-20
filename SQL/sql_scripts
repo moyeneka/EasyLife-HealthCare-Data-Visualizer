@@ -39,4 +39,4 @@ CREATE TABLE diabetes(
 
 INSERT INTO Patient VALUES ('Vincent', 'Stewart', 'm', 63, 000001);
 INSERT INTO Heart VALUES (000001, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1, 1);
-INSERT INTO diabetes VALUES (000001, 6, 148, 72, 35, 0, 33.6, 0.627, 50, 1);
+INSERT INTO diabetes VALUES (000001, 0, 105, 84, 0, 0, 27.9, 0.741, 1);
