@@ -23,54 +23,100 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h2>Patient Info</h2>
+                            <h2>Heart Info</h2>
                         </div>
                         <div class="card-body">
-                            <form>
+                            <form action="AddHeartInfo.php" method="post">
+            
             
                                 <div class="mb-3 row">
-                                    <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
-                                    <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="First Name" required>
-                                        <div class="invalid-feedback">
-                                            Please choose a username.
-                                        </div>
+                                    <label for="cp" class="col-sm-5 col-form-label">chest pain type (4 values)</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="cp" placeholder="Chest Pain">
                                     </div>
                                 </div>
-            
+
                                 <div class="mb-3 row">
-                                    <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
-                                    <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                                    <label for="restingbp" class="col-sm-5 col-form-label">Resting Blood pressure</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="restingbp" placeholder="Resting Blood pressure">
                                     </div>
-                                </div>
-            
+                                    </div>
+                                    
                                 <div class="mb-3 row">
-                                    <label for="sex" class="col-sm-2 col-form-label">Age</label>
-                                    <div class="col-sm-2">
-                                    <input type="number" class="form-control" id="Age" placeholder="Age">
+                                    <label for="chol" class="col-sm-5 col-form-label">Serum Cholestoral (mg/dl)</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="chol " placeholder="Serum Cholestoral">
+                                    </div>
                                     </div>
 
-                                    <label for="lastName" class="col-sm-2 col-form-label">Sex</label>
-                                    <div class="col-sm-2">
-                                        <select class="form-select" aria-label="Default select example" >
-                                            <option selected>Sex</option>
-                                            <option value="1">Male</option>
-                                            <option value="2">Female</option>
-                                            <option value="3">Prefer Not To Say</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                
                                 <div class="mb-3 row">
-                                    <label for="Id" class="col-sm-2 col-form-label">ID</label>
-                                    <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="id" placeholder="id" required>
+                                    <label for="fbs" class="col-sm-5 col-form-label">Fasting Blood Sugar > 120 mg/dl</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="fbs" placeholder="Fasting Blood Sugar">
                                     </div>
                                 </div>
+
+                                <div class="mb-3 row">
+                                    <label for="restecg" class="col-sm-5 col-form-label"> Resting Electrocardiographic Results (values 0,1,2)</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="restecg" placeholder="Resting Electrocardiographic Results">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="thalach" class="col-sm-5 col-form-label">Maximum Heart Rate Achieved</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="thalach" placeholder="Maximum Heart Rate Achieved">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="exang" class="col-sm-5 col-form-label">Exercise Induced Angina</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="exang" placeholder="Exercise Induced Angina">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="oldpeak" class="col-sm-5 col-form-label">Oldpeak</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="oldpeak" placeholder="Oldpeak">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="slope" class="col-sm-5 col-form-label">Slope of the peak exercise ST segment</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="slope" placeholder="Slope of the peak exercise ST segment">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="ca" class="col-sm-5 col-form-label">Number of Major Vessels (0-3) colored by flourosopy</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="ca" placeholder="Resting Blood pressure">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="thal" class="col-sm-5 col-form-label">Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="thal" placeholder="Thal">
+                                    </div>
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="tgt" class="col-sm-5 col-form-label">Target: 0= less chance of heart attack 1= more chance of heart attack</label>
+                                    <div class="col-sm-6">
+                                    <input type="number" class="form-control" id="tgt" placeholder="Target">
+                                    </div>
+                                </div>                    
                                 
-                                <div class="col-auto">
-                                <button type="submit" class="btn btn-primary mb-3">Submit</button>
+                                <div class="row justify-content-end" >
+                                    <div class="col-auto">
+                                        <button type="submit" class="btn btn-primary mb-3 float-right">Submit</button>
+                                    </div>
                                 </div>
                             </form>
                         </div>

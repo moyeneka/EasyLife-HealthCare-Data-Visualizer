@@ -31,7 +31,7 @@
                                 <div class="mb-3 row">
                                     <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
                                     <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="First Name" required>
+                                    <input type="text" class="form-control" id="fName" placeholder="First Name" required>
                                         <div class="invalid-feedback">
                                             Please choose a username.
                                         </div>
@@ -41,14 +41,14 @@
                                 <div class="mb-3 row">
                                     <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
                                     <div class="col-sm-5">
-                                    <input type="text" class="form-control" id="staticEmail" placeholder="Last Name" required>
+                                    <input type="text" class="form-control" id="lName" placeholder="Last Name" required>
                                     </div>
                                 </div>
             
                                 <div class="mb-3 row">
-                                    <label for="sex" class="col-sm-2 col-form-label">Age</label>
+                                    <label for="age" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-                                    <input type="number" class="form-control" id="staticEmail" placeholder="Age">
+                                    <input type="number" class="form-control" id="age" placeholder="Age">
                                     </div>
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
