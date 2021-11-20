@@ -21,7 +21,7 @@ CREATE TABLE Heart(
     ca int(1) NOT NULL,
     thal int(1) NOT NULL,
     tgt int(1) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
     FOREIGN KEY (id) REFERENCES Patient(id)
 );
 
@@ -35,7 +35,7 @@ CREATE TABLE diabetes(
     bmi decimal(3,1) NOT NULL,
     dpf decimal(3,3) NOT NULL,
     outcome int(1) NOT NULL,
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
     FOREIGN KEY (id) REFERENCES Patient(id)
 );
 
