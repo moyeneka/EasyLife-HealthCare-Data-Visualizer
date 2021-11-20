@@ -31,13 +31,22 @@
 
                     <ul class="navbar-nav nav-tabs">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link" href="./home.php">Home</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./AddPatient.php">Add Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./ViewPatients.php">Data Analysis</a>
+                            <a class="nav-link" href="./ViewPatients.php">View Patient Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ViewDiabetes.php">View Diabetes Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ViewHeart.php">View Heart Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./ViewHeart.php">View Heart Info</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
