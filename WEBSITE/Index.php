@@ -36,18 +36,20 @@ include_once("excel_generate.php");
             </form>
             <table id="" class="table table-striped table-bordered">
                 <tr>
-                    <th>Name</th>
-                    <th>Status</th>
-                    <th>Priority</th>
-                    <th>Date</th>
+                    <th>fname</th>
+                    <th>lname</th>
+                    <th>sex</th>
+                    <th>age</th>
+                    <th>id</th>
                 </tr>
                 <tbody>
                     <?php foreach($tasks as $row):?>
                     <tr>
-                        <td><?php echo $row ['Name']?></td>
-                        <td><?php echo $row ['Status']?></td>
-                        <td><?php echo $row ['Priority']?></td>
-                        <td><?php echo $row ['Date']?></td>
+                        <td><?php echo $row ['fname']?></td>
+                        <td><?php echo $row ['lname']?></td>
+                        <td><?php echo $row ['sex']?></td>
+                        <td><?php echo $row ['age']?></td>
+                        <td><?php echo $row ['id']?></td>
                     </tr>
                     <?php endforeach; ?>
                 </tbody>
@@ -66,7 +68,7 @@ var target = $(this).attr('id');
 switch(target) {
 	case 'export-to-excel' :
 	$('#hidden-type').val(target);
-	//alert($('#hidden-type').val());
+	alert($('#hidden-type').val());
 	$('#export-form').submit();
 	$('#hidden-type').val('');
 	break
