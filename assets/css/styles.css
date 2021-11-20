@@ -1,69 +1,71 @@
-@import url('https://fonts.googleapis.com/css2?family=Fjord+One&display=swap');
-
-/* Variables */
-:root {
-  --font-family: "Fjord One", serif;
-  --normal-font: 400;
-  --bold-font: 700;
-  --bolder-font: 900;
-  --bg-color: #fcfcfc;
-  --primary-color: #4756df;
-  --secondary-color: #ff7235;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
-  --bottom-margin: 0.5rem;
-  --bottom-margin-2: 1rem;
-  --line-height: 1.7rem;
-  --transition: 0.3s;
+table {
+    width: 800px;
+    border-collapse: collapse;
+    overflow: hidden;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-html {
-  scroll-behavior: smooth;
+th, td {
+    padding: 15px;
 }
 
-/* CSS Resets */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* border: 2px solid red; */
+th{
+    text-align: left;
 }
 
-ul {
-  list-style-type: none;
+.patient {
+    margin-top: 2rem;
 }
 
-a {
-  text-decoration: none;
-  color: var(--primary-color);
+.patient h2 {
+    text-align: center;
+    margin-bottom: 0.5rem;
 }
 
-a:hover {
-  text-decoration: none;
-  color: var(--secondary-color);
+.patient-form-container {
+    max-width: 40.75rem;
+    margin: 0 auto;
+    padding: 0.938;
+    border-radius: 5px;
 }
 
-body {
-  font-family: var(--font-family);
+.patient-form-container label {
+    line-height: 2.7em;
 }
 
-nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+.patient-form-container textarea {
+    min-height: 6.25rem;
+    font-size: 14px;
 }
 
-nav ul {
-    display: flex;
-    gap: 1.9rem;
+.patient-form-container .input-field {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 2px outset;
+    font-size: 0.875rem;
+    outline: none;
 }
 
-nav ul li {
-    font-weight: var(--bold-font);
+.input-field::placeholder {
+    padding: 0.5rem;
+}
+
+.submit_button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid red;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.submit_button:hover {
+    background-color: purple;
+    border: 2px solid purple;
+    cursor: pointer;
 }
