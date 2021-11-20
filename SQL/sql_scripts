@@ -1,0 +1,38 @@
+CREATE TABLE Patient(
+    fname varchar(10) NOT NULL,
+    lname varchar(15) NOT NULL,
+    sex char(1) NOT NULL,
+    age int(3) NOT NULL,
+    id int(6) NOT NULL UNIQUE,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE Heart(
+    id int(6) REFERENCES Patient(id),
+    cp int(1) NOT NULL,
+    restingbp int(3) NOT NULL,
+    chol int(3) NOT NULL,
+    fbs int(1) NOT NULL,
+    restecg int(1) NOT NULL,
+    thalach int(3) NOT NULL,
+    exang int(1) NOT NULL,
+    oldpeak int(1) NOT NULL,
+    slope int(1) NOT NULL,
+    ca int(1) NOT NULL,
+    thal int(1) NOT NULL,
+    tgt int(1) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+CREATE TABLE diabetes(
+    id int(6) REFERENCES Patient(id),
+    pregnancies int(2) NOT NULL,
+    glucose int(3) NOT NULL,
+    bloodp int(3) NOT NULL,
+    skint int(2) NOT NULL,
+    insulin int(3) NOT NULL,
+    bmi decimal(3,1) NOT NULL,
+    dpf decimal(3,3) NOT NULL,
+    outcome int(1) NOT NULL,
+    PRIMARY KEY (id)
+);
