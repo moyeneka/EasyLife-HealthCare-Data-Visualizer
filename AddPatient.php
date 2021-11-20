@@ -37,7 +37,7 @@
                             <a class="nav-link active" href="#">Add Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./ViewPatient.php">Data Analysis</a>
+                            <a class="nav-link" href="./ViewPatients.php">Data Analysis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -78,20 +78,12 @@
                                 <div class="mb-3 row">
                                     <label for="age" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-<<<<<<< Updated upstream
-                                    <input type="number" class="form-control" id="age" placeholder="Age" required>
-=======
-                                    <input type="number" class="form-control" id="age" name="age" placeholder="Age">
->>>>>>> Stashed changes
+                                    <input type="number" class="form-control" id="age" name="age" placeholder="Age" required>
                                     </div>
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
                                     <div class="col-sm-2">
-<<<<<<< Updated upstream
-                                        <select class="form-select" id="sex" aria-label="Default select example">
-=======
                                         <select class="form-select" id="sex" name="sex" aria-label="Default select example" >
->>>>>>> Stashed changes
                                             <option selected>Sex</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
@@ -102,10 +94,19 @@
                                 
                                 <div class="row justify-content-end" >
                                     <div class="col-auto">
-                                        <input name="submit" type="submit" class="btn btn-primary mb-3 float-right">
+                                        <input name="submit" type="submit"  class="btn btn-primary mb-3 float-right">
+                                    </div>
+                                </div>
+
+
+                                <div class="row justify-content-start" >
+                                    <div class="col-auto">
+                                        <a href="./heart_info.php" class="link-primary" style>Add Heart information</a>
                                     </div>
                                 </div>
                             </form>
+
+                            
                         </div>
                     </div>
                     

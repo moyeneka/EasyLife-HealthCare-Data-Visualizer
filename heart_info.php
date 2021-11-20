@@ -37,7 +37,7 @@
                             <a class="nav-link active" href="#">Add Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./ViewPatient.php">Data Analysis</a>
+                            <a class="nav-link" href="./ViewPatients.php">Data Analysis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -147,6 +147,18 @@
                                     <div class="col-auto">
                                         <button type="submit" class="btn btn-primary mb-3 float-right">Submit</button>
                                     </div>
+                                </div>
+
+                                <div class="row justify-content-between" >
+                                    <div class="col-auto">
+                                        <a href="./AddPatient.php" class="link-primary" style>Back</a>
+                                    </div>
+
+                                    <div class="col-auto">
+                                        <a href="./Diabetes_info.php" class="link-primary" style>Add Diabetes Information</a>
+                                    </div>
+                                </div>
+                                    
                                 </div>
                             </form>
                         </div>

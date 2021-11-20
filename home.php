@@ -37,7 +37,7 @@
                             <a class="nav-link" href="./AddPatient.php">Add Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./ViewPatient.php">Data Analysis</a>
+                            <a class="nav-link" href="./ViewPatients.php">Data Analysis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>

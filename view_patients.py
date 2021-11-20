@@ -27,7 +27,7 @@ try:
                 print("   <td>" + col_data[i] + "</td>")
         print("</tr>")
 
-    print("</table></section></div>")
+    print("</table></section></div></div>")
     python_db.close()
 except Exception as e:
     logging.error(traceback.format_exc())
