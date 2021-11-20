@@ -11,12 +11,12 @@ try:
     res = python_db.executeSelect('SELECT * FROM Patient;')
     res = res.split('\n')
     col_names = res[0].split(' ')
-    print("<br/>" + "Patient Table" + "<br/>")
-    print("<table>")
-    print(" <tr>")
+    print("<div class=\"container-fluid\"> <section class=\"patient\" id=\"patient\"> <br/> <h2>" + "Patient Table" + "</h2><br/>")
+    print("<table class=\"table table-bordered\">")
+    print("<tr>")
     for i in range(len(col_names)):
         if len(col_names[i]) > 1:
-            print("   <th>" + col_names[i] + "</th>")
+            print("   <th scope=\"col\">" + col_names[i] + "</th>")
     print("</tr>")
 
     for i in range(len(res)-2):
@@ -27,7 +27,7 @@ try:
                 print("   <td>" + col_data[i] + "</td>")
         print("</tr>")
 
-    print("</table>")
+    print("</table></section></div>")
     python_db.close()
 except Exception as e:
     logging.error(traceback.format_exc())

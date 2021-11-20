@@ -21,7 +21,7 @@
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
 
-                <a class="navbar-brand" href="#">Easy Life</a>
+                <a class="navbar-brand" style="font-size='30px'; " href="#"><h3>Easy Life</h3></a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -34,10 +34,10 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Add Patient</a>
+                            <a class="nav-link" href="./AddPatient.php">Add Patient</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Data Analysis</a>
+                            <a class="nav-link" href="./ViewPatient.php">Data Analysis</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact Us</a>
@@ -47,30 +47,32 @@
             </div>
         </nav>
 
-        <div class="card text-center">
-            <div class="d-flex justify-content-center align-items-center">
+        <section class="patient" id="patient">
+            <div class="card text-center">
+                <div class="d-flex justify-content-center align-items-center">
 
-                <div class="col-md-5">
-                    <img src="./assets/images/pexels-anete-lusina-4792291.jpg" class="img-fluid rounded-start" style="object-fit: container;" alt="Data Analysis Picture">
-                    <footer>
-                        <small>
-                            Photo by Anete Lusina from Pexels
-                        </small>
-                    </footer>
-                </div>
-
-                <div class="col-md-7">
-                    <div class="card-body">
-                        <h5 class="card-title">Easy Life</h5>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis temporibus magni nesciunt ipsam nam voluptates excepturi consectetur est necessitatibus similique, quidem fugiat quasi atque, expedita natus. Voluptatem inventore nam maxime!
-                        </p>
-                        <a href="#" class="btn btn-primary">Get Started</a>
+                    <div class="col-md-5">
+                        <img src="./assets/images/pexels-anete-lusina-4792291.jpg" class="img-fluid rounded-start" style="object-fit: container;" alt="Data Analysis Picture">
+                        <footer>
+                            <small>
+                                Photo by Anete Lusina from Pexels
+                            </small>
+                        </footer>
                     </div>
+
+                    <div class="col-md-7">
+                        <div class="card-body">
+                            <h5 class="card-title">Easy Life</h5>
+                            <p class="card-text">
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis temporibus magni nesciunt ipsam nam voluptates excepturi consectetur est necessitatibus similique, quidem fugiat quasi atque, expedita natus. Voluptatem inventore nam maxime!
+                            </p>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                        </div>
+                    </div>
+            
                 </div>
-        
             </div>
-        </div>
+        </section>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->
