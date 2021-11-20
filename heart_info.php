@@ -12,7 +12,7 @@
     <!--CSS Styles -->
     <link rel="stylesheet" href="assets/css/styles.css" />
 
-    <title>Patient Information</title>
+    <title>Heart Information</title>
   </head>
 
   <body>
@@ -23,7 +23,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h2>Heart Info</h2>
+                            <h2>Heart Information</h2>
                         </div>
                         <div class="card-body">
                             <form action="AddHeartInfo.php" method="post">
@@ -32,84 +32,84 @@
                                 <div class="mb-3 row">
                                     <label for="cp" class="col-sm-5 col-form-label">chest pain type (4 values)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="cp" placeholder="Chest Pain">
+                                    <input type="number" class="form-control" id="cp" placeholder="Chest Pain" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="restingbp" class="col-sm-5 col-form-label">Resting Blood pressure</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="restingbp" placeholder="Resting Blood pressure">
+                                    <input type="number" class="form-control" id="restingbp" placeholder="Resting Blood pressure" required>
                                     </div>
                                     </div>
                                     
                                 <div class="mb-3 row">
                                     <label for="chol" class="col-sm-5 col-form-label">Serum Cholestoral (mg/dl)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="chol " placeholder="Serum Cholestoral">
+                                    <input type="number" class="form-control" id="chol " placeholder="Serum Cholestoral" required>
                                     </div>
                                     </div>
 
                                 <div class="mb-3 row">
                                     <label for="fbs" class="col-sm-5 col-form-label">Fasting Blood Sugar > 120 mg/dl</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="fbs" placeholder="Fasting Blood Sugar">
+                                    <input type="number" class="form-control" id="fbs" placeholder="Fasting Blood Sugar" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="restecg" class="col-sm-5 col-form-label"> Resting Electrocardiographic Results (values 0,1,2)</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="restecg" placeholder="Resting Electrocardiographic Results">
+                                    <input type="number" class="form-control" id="restecg" placeholder="Resting Electrocardiographic Results" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="thalach" class="col-sm-5 col-form-label">Maximum Heart Rate Achieved</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="thalach" placeholder="Maximum Heart Rate Achieved">
+                                    <input type="number" class="form-control" id="thalach" placeholder="Maximum Heart Rate Achieved" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="exang" class="col-sm-5 col-form-label">Exercise Induced Angina</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="exang" placeholder="Exercise Induced Angina">
+                                    <input type="number" class="form-control" id="exang" placeholder="Exercise Induced Angina" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="oldpeak" class="col-sm-5 col-form-label">Oldpeak</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="oldpeak" placeholder="Oldpeak">
+                                    <input type="number" class="form-control" id="oldpeak" placeholder="Oldpeak" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="slope" class="col-sm-5 col-form-label">Slope of the peak exercise ST segment</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="slope" placeholder="Slope of the peak exercise ST segment">
+                                    <input type="number" class="form-control" id="slope" placeholder="Slope of the peak exercise ST segment" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="ca" class="col-sm-5 col-form-label">Number of Major Vessels (0-3) colored by flourosopy</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="ca" placeholder="Resting Blood pressure">
+                                    <input type="number" class="form-control" id="ca" placeholder="Resting Blood pressure" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="thal" class="col-sm-5 col-form-label">Thal: 0 = normal; 1 = fixed defect; 2 = reversable defect</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="thal" placeholder="Thal">
+                                    <input type="number" class="form-control" id="thal" placeholder="Thal" required>
                                     </div>
                                 </div>
 
                                 <div class="mb-3 row">
                                     <label for="tgt" class="col-sm-5 col-form-label">Target: 0= less chance of heart attack 1= more chance of heart attack</label>
                                     <div class="col-sm-6">
-                                    <input type="number" class="form-control" id="tgt" placeholder="Target">
+                                    <input type="number" class="form-control" id="tgt" placeholder="Target" required>
                                     </div>
                                 </div>                    
                                 

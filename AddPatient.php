@@ -23,7 +23,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h2>Patient Info</h2>
+                            <h2>Patient Information</h2>
                         </div>
                         <div class="card-body">
                             <form action="AddPatient.php" method="post">
@@ -48,12 +48,12 @@
                                 <div class="mb-3 row">
                                     <label for="age" class="col-sm-2 col-form-label">Age</label>
                                     <div class="col-sm-2">
-                                    <input type="number" class="form-control" id="age" placeholder="Age">
+                                    <input type="number" class="form-control" id="age" placeholder="Age" required>
                                     </div>
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
                                     <div class="col-sm-2">
-                                        <select class="form-select" id="sex" aria-label="Default select example" >
+                                        <select class="form-select" id="sex" aria-label="Default select example">
                                             <option selected>Sex</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
