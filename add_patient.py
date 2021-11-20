@@ -11,11 +11,18 @@ try:
     python_db.open_database('localhost', mysql_username, mysql_password, mysql_username)
     FNAME = sys.argv[1]
     LNAME = sys.argv[2]
-    SEX = sys.argv[3]
+
+    if sys.argv[3] == '1':
+        SEX = 'm'
+    elif sys.argv[3] == '2':
+        SEX = 'f'
+    else:
+        SEX = 'o'
+
     AGE = sys.argv[4]
     ID = randint(10000, 999999)
 
-    val = "'" + FNAME + "','" + LNAME + "','" + SEX + "'," + AGE + "," + ID
+    val = "'" + FNAME + "','" + LNAME + "','" + SEX + "'," + str(AGE) + "," + str(ID)
     python_db.insert("Patient", val)
 
     python_db.close()
