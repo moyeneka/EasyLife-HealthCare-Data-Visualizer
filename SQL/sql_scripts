@@ -16,7 +16,7 @@ CREATE TABLE Heart(
     restecg int(1) NOT NULL,
     thalach int(3) NOT NULL,
     exang int(1) NOT NULL,
-    oldpeak int(1) NOT NULL,
+    oldpeak decimal(2,1) NOT NULL,
     slope int(1) NOT NULL,
     ca int(1) NOT NULL,
     thal int(1) NOT NULL,
@@ -36,3 +36,7 @@ CREATE TABLE diabetes(
     outcome int(1) NOT NULL,
     PRIMARY KEY (id)
 );
+
+INSERT INTO Patient VALUES ('Vincent', 'Stewart', 'm', 63, 000001);
+INSERT INTO Heart VALUES (000001, 3, 145, 233, 1, 0, 150, 0, 2.3, 0, 0, 1, 1);
+INSERT INTO diabetes VALUES (000001, 6, 148, 72, 35, 0, 33.6, 0.627, 50, 1);
