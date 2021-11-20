@@ -83,7 +83,7 @@
 
                                     <label for="Sex" class="col-sm-1 col-form-label">Sex</label>
                                     <div class="col-sm-2">
-                                        <select class="form-select" id="sex" name="sex" aria-label="Default select example" >
+                                        <select class="form-select" id="sex" name="sex" aria-label="Default select example">
                                             <option selected>Sex</option>
                                             <option value="1">Male</option>
                                             <option value="2">Female</option>
