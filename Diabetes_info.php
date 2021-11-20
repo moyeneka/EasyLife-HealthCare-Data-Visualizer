@@ -27,7 +27,12 @@
                         </div>
                         <div class="card-body">
                             <form action="AddHeartInfo.php" method="post">
-            
+                                <div class="mb-3 row">
+                                    <label for="id" class="col-sm-3 col-form-label">ID</label>
+                                    <div class="col-sm-4">
+                                    <input type="number" class="form-control" id="id" name="id" placeholder="ID" required>
+                                    </div>
+                                </div>
             
                                 <div class="mb-3 row">
                                     <label for="pregnancies" class="col-sm-3 col-form-label">Pregnancies</label>
@@ -51,7 +56,7 @@
                                     </div>
 
                                 <div class="mb-3 row">
-                                    <label for="skint" class="col-sm-3 col-form-label">Skint</label>
+                                    <label for="skint" class="col-sm-3 col-form-label">Skin Thickness</label>
                                     <div class="col-sm-4">
                                     <input type="number" class="form-control" id="skint" name="skint" placeholder="Skint" required>
                                     </div>
@@ -118,6 +123,7 @@
 <?php
 if (isset($_POST['submit']))
 {
+    $ID = escapeshellarg($_POST[id]);
     $PREGNANCIES = escapeshellarg($_POST[pregnancies]);
     $GLUCOSE = escapeshellarg($_POST[glucose]);
     $BLOODP = escapeshellarg($_POST[bloodp]);
@@ -127,7 +133,7 @@ if (isset($_POST['submit']))
     $DPF = escapeshellarg($_POST[dpf]);
     $OUTCOME = escapeshellarg($_POST[outcome]);
 
-    $command = 'python3 add_patient.py' . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
+    $command = 'python3 add_patient.py' . ' ' . $ID . ' ' .$PREGNANCIES . ' ' . $GLUCOSE . ' ' . $BLOODP . ' ' . $SKINTH . ' ' . $INSULIN . ' ' . $BMI . ' ' . $DPF . ' ' . $OUTCOME;
 
     $escaped_command = escapeshellcmd($command);
     system($escaped_command);

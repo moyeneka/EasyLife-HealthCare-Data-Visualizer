@@ -9,24 +9,17 @@ mysql_password= 'iepha3Oo'  # please change to your MySQL password
 
 try:
     python_db.open_database('localhost', mysql_username, mysql_password, mysql_username)
-    PREGNANCIES = sys.argv[1]
-    GLUCOSE = sys.argv[2]
-    BLOODP = sys.argv[3]
-    SKINTH = sys.argv[4]
-    INSULIN = sys.argv[5]
-    BMI = sys.argv[6]
+    ID = sys.argv[1]
+    PREGNANCIES = sys.argv[2]
+    GLUCOSE = sys.argv[3]
+    BLOODP = sys.argv[4]
+    SKINTH = sys.argv[5]
+    INSULIN = sys.argv[6]
+    BMI = sys.argv[7]
+    DPF = sys.argv[8]
+    OUTCOME = sys.argv[9]
 
-    if sys.argv[3] == '1':
-        SEX = 'm'
-    elif sys.argv[3] == '2':
-        SEX = 'f'
-    else:
-        SEX = 'o'
-
-    AGE = sys.argv[4]
-    ID = randint(10000, 999999)
-
-    val = "'" + FNAME + "','" + LNAME + "','" + SEX + "'," + str(AGE) + "," + str(ID)
+    val = str(ID) + "," + str(PREGNANCIES) + "," + str(GLUCOSE) + "," + str(BLOODP) + "," + str(SKINTH) + "," + str(INSULIN) + "," + str(BMI) + "," + str(DPF) + "," + str(OUTCOME)
     python_db.insert("Patient", val)
 
     python_db.close()
